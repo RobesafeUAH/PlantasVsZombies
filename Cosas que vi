@@ -1,0 +1,11 @@
+1)Excepciones que falten (tablero pequeño, plantar plantas al final,¿poner comandos erroneos?)
+2)Comando ayuda
+3)Juntas los comandos de plantar y demás en 1 (probablemente necesite gestion de excepciones)
+Cosas que no estoy seguro sobre ellas:
+  1. En los métodos de disparar y atacar los objetivos del ataque son tratados como ZombieComun, girasol o lanzaguisantes, deberiamos
+     generalizarlo para que el objetivo sea planta o zombie?
+  2. 
+  3. En la parte de gestionar la dificultad en el tablero, en ALTA se trata primero el size>=2 y luego size>=1, no debería ser solo ==1 en 
+     el 2 caso?
+  4. En la misma parte pero con dificultad IMPOSIBLE el spawn de zombies se crea como variable en cada if, deberiamos ponerlo al inicio de 
+     la funcion y asi no se crea 5 vecess?
